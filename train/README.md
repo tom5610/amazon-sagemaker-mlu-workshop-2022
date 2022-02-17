@@ -17,7 +17,7 @@
 
 
 1. Go to ( https://dashboard.eventengine.run/login). You will be redirected to the page below.
-![png](./image/event-engine1.JPG)
+![png](./images/event-engine1.JPG)
 
 
 2. Enter the event hash you have received from your instructor and click on <b> Accept Terms & Login </b>.
@@ -25,13 +25,13 @@
 3. Click on <b> Email One-Time Password (OTP) </b>.
 
 4. You are redirected to the following page:
-![png](./image/otp.JPG)
+![png](./images/otp.JPG)
 
 
 5. Enter your email address and click on <b> Send passcode </b>
 
 6. You are redirected to the following page:
-![png](./image/passcode.JPG)
+![png](./images/passcode.JPG)
 
 
 7. Check your mailbox, copy-past the one-time password and click on <b> Sign In </b>
@@ -50,19 +50,19 @@ Amazon SageMaker Studio is a web-based, integrated development environment (IDE)
 
 
 1. Open AWS console and switch to AWS region communicated by your instructor.
-![png](./image/console.JPG)
+![png](./images/console.JPG)
 2. Under services search for <b> Amazon SageMaker </b>.
-![png](./image/sagemaker.JPG)
+![png](./images/sagemaker.JPG)
 
 
 3. Under <b> Get Started </b>, click on the orange button <b> SageMaker Studio </b>
-![png](./image/studio.JPG)
+![png](./images/studio.JPG)
 4. A SageMaker Studio environment should already be provisioned. Click on <b> Open Studio </b> (on the right side of the preprovisioned <code><b>sagemakeruser</b></code> username).
-![png](./image/sagemaker-user.JPG)
+![png](./images/sagemaker-user.JPG)
 5. The page can take 1 or 2 minutes to load when you access SageMaker Studio for the first time.
-![png](./image/studio2.JPG)
+![png](./images/studio2.JPG)
 6. You will be redirected to a new web tab that looks like this:
-![png](./image/studio-dashboard.JPG)
+![png](./images/studio-dashboard.JPG)
 9. You can close the `Get Started` panel. <b>Congratulations!! You have successfully launched SageMaker Studio.
 
 
@@ -81,9 +81,9 @@ Amazon SageMaker Studio is a web-based, integrated development environment (IDE)
   1. Click on this “amazon-sagemaker-mlu-workshop” folder and then double click on the last file: “xgboost_direct_marketing_sagemaker.ipynb” notebook.
 
   2. If you are prompted to choose a Kernel, choose the “Python 3 (Data Science)” kernel and click “Select”.
-![png](./image/kernel.JPG)
+![png](./images/kernel.JPG)
   3. You will then have the notebook opened. You can verify the Kernel CPU and Memory states on the top right of the notebook.
-![png](./image/dm.JPG)
+![png](./images/dm.JPG)
   4. You have now successfully opened the Juypter notebook for workshop 1. The rest of the workshop 1 can be completed, by following the steps outlined in the Jupyter notebook.
 
 ### Workshop02
@@ -91,9 +91,9 @@ _To do:  Add details about workshop 02_
   1. Click on this “amazon-sagemaker-mlu-workshop” folder and then double click on the last file: “xgboost_direct_marketing_sagemaker_autopilot.ipynb” notebook.
 
   2. If you are prompted to choose a Kernel, choose the “Python 3 (Data Science)” kernel and click “Select”.
-![png](./image/kernel.JPG)
+![png](./images/kernel.JPG)
   3. You will then have the notebook opened. You can verify the Kernel CPU and Memory states on the top right of the notebook.
-![png](./image/dm.JPG)
+![png](./images/dm.JPG)
   4. You have now successfully opened the Juypter notebook for workshop 2. The rest of the workshop 2 can be completed, by following the steps outlined in the Jupyter notebook.
 
 

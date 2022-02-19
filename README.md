@@ -107,7 +107,7 @@ This workshop explores three different options to implement the supervised ML pr
   
 In this workshop, you will learn how to build a machine learning pipeline to build, train and deploy a ML model using SageMaker Python SDK from within a Jupyter notebook.  This workshop will use the SageMaker built-in algorithm XGBoost.  
 
-Click on the link below to work on [Direct Marketing with Jupyter Notebook](./train/README.me) to complete Workshop 01. 
+Click on the link below to work on [Direct Marketing with Jupyter Notebook](./train/README.md) to complete Workshop 01. 
 
 
 ### Workshop02
@@ -116,11 +116,11 @@ In this workshop, you will  to use <b> SageMaker Autopilot </b> to _automate_ th
 - Using Amazon SageMaker Studio UI, without writing code
 - With code using SageMaker Python SDK for Autopilot
 
-Click on  [Direct Marketing with Amazon SageMaker Autopilot](./autopilot/README.me) to complete Workshop 02.
+Click on  [Direct Marketing with Amazon SageMaker Autopilot](./autopilot/README.md) to complete Workshop 02.
 
   
 ### Workshop03
-Click on  [Direct Marketing with Amazon SageMaker Pipelines](./sagemaker-pipelines/README.me) to continue work on Workshop 03.
+Click on  [Direct Marketing with Amazon SageMaker Pipelines](./sagemaker-pipelines/README.md) to continue work on Workshop 03.
 
 
 #### Conclusion

@@ -29,6 +29,7 @@ _> And, the way with 'human guidance' won't be covered in the lab. For more deta
 
 1. [Data Preparation](#Data-Preparation)
 1. [Create an Autopilot Experiment](#Create-an-Autopilot-Experiment)
+ > **_NOTE_** - Make sure that you choose **ONLY ONE ** of the following two options to create an Autopilot experiment  
  * [Using SageMaker Studio UI](#Using-SageMaker-Studio-UI)
  * [Using Python SDK](#Using-Python-SDK)
 

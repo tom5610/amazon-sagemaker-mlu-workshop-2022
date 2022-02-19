@@ -62,9 +62,9 @@ Amazon SageMaker Studio is a web-based, integrated development environment (IDE)
 4. A SageMaker Studio environment should already be provisioned. Click on <b> Open Studio </b> (on the right side of the pre-provisioned <code><b>sagemakeruser</b></code> username).
 ![png](./image/sagemaker-user.JPG)
 5. The page can take 1 or 2 minutes to load when you access SageMaker Studio for the first time.
-![png](./images/studio2.JPG)
+![png](./image/studio2.JPG)
 6. You will be redirected to a new web tab for `Amazon SageMaker Studio`that looks like this:
-![png](./images/studio-dashboard.JPG)
+![png](./image/studio-dashboard.JPG)
 7. You can now close the `Launcher` panel. <br><b>Congratulations!! You have successfully launched SageMaker Studio.</b>
 
 ## Content
@@ -72,6 +72,7 @@ Amazon SageMaker Studio is a web-based, integrated development environment (IDE)
 2. In the terminal, type the following command:
 
     <code> git clone git@github.com:tom5610/mlu-workshop.git </code>
+    
 -- Image to be added --
 3. After completion of step 2, you will have `mlu-workshop` folder created in <b> left panel </b> of the studio.
 
@@ -94,25 +95,20 @@ This workshop explores three different options to implement the supervised ML pr
  2. Use SageMaker Autopilot to get the most accurate ML pipeline  
  3. Use SageMaker Pipeline to orchestrate a ML SageMaker ML jobs
 
-> You can progress through all the three workshop exercises one after the other or you can jump to a particular exercise that you may be interested to learn more about
-> All workshop exercises will be implemented within Amazon SageMaker Studio environment
+> **_NOTE_** 
 
-Before proceeding to your chosen exercise, ensure that you have completed the previous section to download the content of the GitHub repository needed for the workshop.
+> - You can progress through all the three workshop exercises one after the other or you can jump to an indvidual exercise that you may be interested to learn more about.
+
+> - All workshop exercises will be implemented within Amazon SageMaker Studio environment
+
+> - Before proceeding to your chosen exercise, ensure that you have completed the previous section to download the content of the GitHub repository needed for the workshop.
    
 ### Workshop01
   
 In this workshop, you will learn how to build a machine learning pipeline to build, train and deploy a ML model using SageMaker Python SDK from within a Jupyter notebook.  This workshop will use the SageMaker built-in algorithm XGBoost.  
 
-Click on the link below to continue work on this workshop _include link_
+Click on the link below to work on [Direct Marketing with Jupyter Notebook](./train/README.me) to complete Workshop 01. 
 
-To continue work on this workshop, follow the steps below:  
-  1. Click on this `mlu-workshop` folder and then on the `train` sub-folder and then double click on the file: `xgboost_direct_marketing_sagemaker.ipynb` to load a Jupyter notebook.
-
-  2. If you are prompted to choose a Kernel, choose the “Python 3 (Data Science)” kernel and click “Select”.
-![png](./images/kernel.JPG)
-  3. You will then have the notebook opened. You can verify the Kernel CPU and Memory states on the top right of the notebook.
-![png](./images/dm.JPG)
-  4. You have now successfully opened the Juypter notebook for <b>workshop 1</b>. The rest of the workshop 1 can be completed, by following the steps outlined in the notebook.
 
 ### Workshop02
 

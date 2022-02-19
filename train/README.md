@@ -63,7 +63,7 @@ Amazon SageMaker Studio is a web-based, integrated development environment (IDE)
 ![png](./images/studio2.JPG)
 6. You will be redirected to a new web tab that looks like this:
 ![png](./images/studio-dashboard.JPG)
-9. You can close the `Get Started` panel. <b>Congratulations!! You have successfully launched SageMaker Studio.
+9. You can close the `Get Started` panel. <b>Congratulations!! You have successfully launched SageMaker Studio.</b>
 
 
 

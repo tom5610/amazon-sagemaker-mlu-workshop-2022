@@ -65,13 +65,13 @@ Amazon SageMaker Studio is a web-based, integrated development environment (IDE)
 ![png](./images/studio2.JPG)
 6. You will be redirected to a new web tab for `Amazon SageMaker Studio`that looks like this:
 ![png](./images/studio-dashboard.JPG)
-7. You can now close the `Launcher` panel. <br><b>Congratulations!! You have successfully launched SageMaker Studio.
+7. You can now close the `Launcher` panel. <br><b>Congratulations!! You have successfully launched SageMaker Studio.</b>
 
 ## Content
 1. In SageMaker Studio, from the `Menu`, click on `File`, then `New` and choose `Terminal`.
 2. In the terminal, type the following command:
 
-    <code> git clone https://github.com/.... </code>
+    <code> git clone git@github.com:tom5610/mlu-workshop.git </code>
 -- Image to be added --
 3. After completion of step 2, you will have `mlu-workshop` folder created in <b> left panel </b> of the studio.
 

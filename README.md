@@ -120,7 +120,7 @@ Click on  [Direct Marketing with Amazon SageMaker Autopilot](./autopilot/README.
 
   
 ### Workshop03
-Click on  [Direct Marketing with Amazon SageMaker Pipelines](./sagemaker-pipelines/README.md) to continue work on Workshop 03.
+Click on  [Direct Marketing with Amazon SageMaker Pipelines](./sagemaker_pipelines/README.md) to complete Workshop 03.
 
 
 #### Conclusion

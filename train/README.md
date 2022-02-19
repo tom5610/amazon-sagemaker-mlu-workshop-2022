@@ -18,7 +18,7 @@ In this workshop we have walked through the process of building, training, tunin
 
 
 ## Next
-In the next workshop [Using SageMaker Autopilot](./autopilot/README.md), you will learn how to automate the machine learning pipeline process.
+In the next workshop [Using SageMaker Autopilot](./../autopilot/README.md), you will learn how to automate the machine learning pipeline process.
 
 ```python
 

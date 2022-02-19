@@ -45,7 +45,7 @@ _> And, the way with 'human guidance' won't be covered in the lab. For more deta
 
 
 ## Create an Autopilot Experiment
-The training data is now stored in an S3 bucket.  You will now create an Autopilot experiment to train on this dataset.  Choose <b> one <b> of the options below to create an Autopilot experiment.  
+The training data is now stored in an S3 bucket.  You will now create an Autopilot experiment to train on this dataset.  Choose <b> one </b> of the options below to create an Autopilot experiment.  
 
 ## Using SageMaker Studio UI
 For this part of the exercise, you will need to keep this README file open in a browser tab, while you carry out the various steps within SageMaker Studio. Follow the instructions outlined below to create an experiment using Amazon SageMaker Studio UI.  
@@ -53,7 +53,7 @@ For this part of the exercise, you will need to keep this README file open in a 
 ### 1. Introduction
 SageMaker Studio provide an UI interface to make [Amazon SageMaker Autopilot](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development-create-experiment.html) experiment easy.  Studio UI is the fastest and easiest way to kick off [Amazon SageMaker Autopilot](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development-create-experiment.html) experiment. With a couple of clicks and filling in the experiment details, such as training data S3 URI, output location S3 URI and experiment settings, etc. you can sit down and relax and wait for the AutoML service to figure out the best model candidate for your ML problems on tabular dataset.
 
-> **_NOTE_** Please do finish [Data Preparation](#Data Preparation) first so that we have the training dataset ready on the S3 bucket.    
+> **_NOTE_** Please do finish  [Data Preparation](./README.md/#Data-Preparation)  first so that we have the training dataset ready on the S3 bucket.    
 
 ### 2. Open Juypter Notebook
 * On the left panel of SageMaker Studio, click on the folder “mlu-workshop” and then on autopilot and then double click on the Jupyter notebook file: `02a_sagemaker_autopilot_experiment_with_studio_ui.ipynb`.
@@ -175,7 +175,7 @@ In this section, we will create an Autopilot experiment using a Jupyter notebook
 ![png](./images/dm.JPG)
 * You have now successfully opened the Juypter notebook.  Now follow the instructions outlined in the Jupyter notebook to create an experiment.
     
-## Conclustion
+## Conclusion
 In this workshop, you have learnt how to build a SageMaker Autopilot experiment using both the SageMaker Studio UI and using SageMaker Autopilot SDK.  This concludes Workshop 2.  
     
 ## Next

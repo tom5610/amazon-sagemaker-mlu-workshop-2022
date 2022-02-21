@@ -65,26 +65,27 @@ SageMaker Studio provide an UI interface to make [Amazon SageMaker Autopilot](ht
     
 #### 4. Create AutoPilot Experiment Job using SageMaker Studio UI    
 In this section, we will work through the steps to create AutoPilot experiment job via SageMaker Studio UI, and invoke the deployed model using boto3 API calls. 
+
 * Create Autopilot Experiment Job
 
 Under 'Launcher' tab, choose the **New autopilot experiment** option from the **Build model automatically** box. If you don't have a 'Launcher' tab, you can open one under Menu 'File' -> 'New Launcher'.
  
 ![New autoPilot experiment](./image/ap_new_autopilot_experiment.png)
     
-### 5. Enter information for the AutoPilot Job
+#### 5. Enter information for the AutoPilot Job
 
 * **Experiment name** - an unique name to your account in the current AWS Region and contains a maximum of 63 alphanumeric characters. Can include hyphens(-). 
  
- ![experiment name](./image/ap_experiment_name.png)
+  ![experiment name](./image/ap_experiment_name.png)
  
- * Type in 'Experiment name', e.g. 'direct-marketing-autopilot-job' 
+  * Type in 'Experiment name', e.g. 'direct-marketing-autopilot-job' 
     
 * **Connect your data** - Provide the training data S3 URI.
  
- ![experiment name](./image/ap_enter_s3bucket_location.png)
+  ![experiment name](./image/ap_enter_s3bucket_location.png)
  
- * Select 'Enter S3 bucket location' option
- * Copy & paste the value of `train_data_s3_path` to 'S3 bucket address'. e.g. the value is similar to 's3://sagemaker-ap-southeast-2-123456789012/mlu-workshop/direct-marketing/autopilot/train/train_data.csv' 
+  * Select 'Enter S3 bucket location' option
+  * Copy & paste the value of `train_data_s3_path` to 'S3 bucket address'. e.g. the value is similar to 's3://sagemaker-ap-southeast-2-123456789012/mlu-workshop/direct-marketing/autopilot/train/train_data.csv' 
   
 * **Is your S3 input a manifest file?** - choose 'off' for the lab given we don't need a manifest file include meta data for our training data.
 
@@ -92,41 +93,44 @@ Under 'Launcher' tab, choose the **New autopilot experiment** option from the **
   
   ![manifest file](./image/ap_target.png)
   
- * Click the dropdown box and select field 'y', which is the target value.
+  * Click the dropdown box and select field 'y', which is the target value.
  
 * **Output data location** - the name of the S3 bucket and directory where you want to store the output data.
  
- ![manifest file](./image/ap_output_data_location.png)
+  ![manifest file](./image/ap_output_data_location.png)
   
- * Select 'Enter S3 bucket location' option
- * Copy & paste the value of `using_studio_ui_output_path` to 'S3 bucket address'. e.g. the value is similar to 's3://sagemaker-ap-southeast-2-123456789012/mlu-workshop/direct-marketing/autopilot/using-studio-ui-output' 
+  * Select 'Enter S3 bucket location' option
+  * Copy & paste the value of `using_studio_ui_output_path` to 'S3 bucket address'. e.g. the value is similar to 's3://sagemaker-ap-southeast-2-123456789012/mlu-workshop/direct-marketing/autopilot/using-studio-ui-output' 
   
 * **Select the machine learning problem type** - Autopilot can automatically select the machine learning problem type and you can specify manually. In our exercise, please choose `Binary classification` in dropdox box.
   
- ![manifest file](./image/ap_ml_problem_type.png)
+  ![manifest file](./image/ap_ml_problem_type.png)
   
- * Please select [`F1`](https://en.wikipedia.org/wiki/F-score) as Object metric. In general, [`F1`](https://en.wikipedia.org/wiki/F-score) is the harmonic mean of the precision and recall in binary classification problem. 
+  * Please select [`F1`](https://en.wikipedia.org/wiki/F-score) as Object metric. In general, [`F1`](https://en.wikipedia.org/wiki/F-score) is the harmonic mean of the precision and recall in binary classification problem. 
   
 * **Do you want to run complete experiment** - You can specify how to run the experiment. 
   
- ![manifest file](./image/ap_complete_experiment.png)
+  ![manifest file](./image/ap_complete_experiment.png)
   
- * If you choose **Yes**, Autopilot runs experiments with model training, generates related trials and you will be able to deploy the best model to SageMaker Endpoint service for realtime inference. 
- * If you choose **No**, instead of running the entire experiment, AutoPilot stops running after generating the notebooks for dataset analysis & candidates definitions. 
+  * Please choose **Yes** so that we can kick off Autopilot Experiment and generate model canddiates. For more detail -
+   * If you choose **Yes**, Autopilot runs experiments with model training, generates related trials and you will be able to deploy the best model to SageMaker Endpoint service for realtime inference. 
+   * If you choose **No**, instead of running the entire experiment, AutoPilot stops running after generating the notebooks for dataset analysis & candidates definitions. 
   
 * **Auto deploy** - Autopilot can automatically deploy the best model from an Autopilot experiment to an endpoint (for realtime inference), accept the default Auto deploy value **On** when creating the experiment. Also, please provide the endpoint name. 
   
- ![manifest file](./image/ap_auto_deploy.png)
+  ![manifest file](./image/ap_auto_deploy.png)
   
- * In our exercise, please input `dm-autopilot-experiment` and the endpoint name will be used later to get predictions from deployed model.
+  * In our exercise, please input `dm-autopilot-experiment` and the endpoint name will be used later to get predictions from deployed model.
   
 * **ADVANCED SETTINGS** - The settings allows you to specify how the experiment should be run. Especially, we want to set the max candidate to be experimented as `10` and accept default values for others.
   
- ![manifest file](./image/ap_advanced_settings.png)
+  ![manifest file](./image/ap_advanced_settings.png)
+  
+  > For experiment purpose and viewing the completed Autopilot Experiment, please do enter 10 - 20 candidates under `Max candidates`, which may take 30-60mins. 
  
 * **Auto deploy the best model confirmation?** - If you choose **On** under 'Auto Deploy', Autopilot will prompt a confirmation dialog to remind you that it will generate cost while deploying the model to SageMaker endpoint. In our exercise, please click `Confirm` button.
   
- ![manifest file](./image/ap_prompt_best_model_deployment.png)
+  ![manifest file](./image/ap_prompt_best_model_deployment.png)
     
 * **AutoPilot experiment in progress** - Once the Autopilot experiment is kicked off, you will be able to view the progress of the experiment. It may takes 20-40mins until the job is finished, which depends on the amount the training dataset & the number of candidates you want to experiment. (Autopilot supports up to 250 candidates)
   

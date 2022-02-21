@@ -71,7 +71,7 @@ Amazon SageMaker Studio is a web-based, integrated development environment (IDE)
 1. In SageMaker Studio, from the `Menu`, click on `File`, then `New` and choose `Terminal`.
 2. In the terminal, type the following command:
 
-    <code> git clone git@github.com:tom5610/mlu-workshop.git </code>
+    <code> git clone https://github.com/tom5610/mlu-workshop.git </code>
     
 -- Image to be added --
 3. After completion of step 2, you will have `mlu-workshop` folder created in <b> left panel </b> of the studio.

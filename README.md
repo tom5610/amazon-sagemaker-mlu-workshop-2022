@@ -6,11 +6,12 @@
 ## Contents
 
 1. [Prerequisite](#Prerequisite)
-1. [SageMaker Studio Access](#SageMakerStudio)
-1. [Workshop Content](#Content)
-    1. [Overview of ML Use-Case](#ML-UseCase)
-    1. [Workshop 01 - Deploy a model with SageMaker](#Workshop01)
-    1. [Workshop 02 - AutoPilot with SageMaker](#Workshop02)
+1. [SageMaker Studio Access](#SageMaker-Studio-Access)
+1. [Download Workshop Content](#Download-Workshop-Content)
+1. [Starting Workshop](#Starting-Workshop)
+    1. [Overview of ML Use-Case](#Overview-of-ML-Use-Case)
+    1. [Workshop 01 - AutoPilot with SageMaker](#Workshop-01-AutoPilot-with-SageMaker)
+    1. [Workshop 02 - Deploy a model with SageMaker](#Workshop-02-Deploy-a-model-with-SageMaker)
     1. [Workshop 03 - SageMaker Pipeline with SageMaker](#Workshop03)
 
 ---
@@ -46,8 +47,7 @@
 
 
 
-
-## SageMakerStudio
+## SageMaker Studio Access
 Amazon SageMaker Studio is a web-based, integrated development environment (IDE) for machine learning that lets you build, train, debug, deploy, and monitor your machine learning models. Studio provides all the tools you need to take your models from experimentation to production while boosting your productivity.
 
 
@@ -67,18 +67,18 @@ Amazon SageMaker Studio is a web-based, integrated development environment (IDE)
 ![png](./image/studio-dashboard.JPG)
 7. You can now close the `Launcher` panel. <br><b>Congratulations!! You have successfully launched SageMaker Studio.</b>
 
-## Content
+## Download Workshop Content
 1. In SageMaker Studio, from the `Menu`, click on `File`, then `New` and choose `Terminal`.
 2. In the terminal, type the following command:
 
     <code> git clone https://github.com/tom5610/mlu-workshop.git </code>
     
--- Image to be added --
-3. After completion of step 2, you will have `mlu-workshop` folder created in <b> left panel </b> of the studio.
+![png](./image/clone.JPG)
+3. After completion of step 2, you will see a `mlu-workshop` folder created in the <b> left panel </b> of SageMaker Studio.
 
-## Workshop
+## Starting Workshop
+### Overview of ML Use-Case
 
-### Overview
 In this workshop, you will work on a typical machine learning (ML) problem which is to predict whether a customer will enroll for a certificate of deposit (CD), after the customer has been contacted through mail, email, phone, etc.  Direct marketing is a common tactic to acquire customers.  Because resources and a customer's attention is limited, the goal is to only target the subset of prospects who are likely to engage with a specific offer.  
     
 The model will be trained on a marketing dataset that contains information on customer demographics, responses to marketing events, and environmental factors. Information about this ML task and a version of the data set used is publicly available from the ML repository curated by the University of California, Irvine (https://archive.ics.uci.edu/ml/datasets/bank+marketing).
@@ -91,36 +91,36 @@ This workshop implements a supervised machine learning problem to solve this pro
   * Deploying the model to an end-point to make on-going predictions    
 
 This workshop explores three different options to implement the supervised ML problem.
+ 1. Use SageMaker Autopilot to build a ML pipeline to generate the most accurate model to solve the given ML problem
  1. Use a Jupyter notebook to manually implement all the phases of the ML pipeline using SageMaker Python SDK
- 2. Use SageMaker Autopilot to get the most accurate ML pipeline  
  3. Use SageMaker Pipeline to orchestrate a ML SageMaker ML jobs
 
 > **_NOTE_** 
 
-> - You can progress through all the three workshop exercises one after the other or you can jump to an indvidual exercise that you may be interested to learn more about.
+> - You can progress through **all** the three workshop exercises one after the other or you can jump to an **indvidual** exercise that you may be interested to learn more about.
 
 > - All workshop exercises will be implemented within Amazon SageMaker Studio environment
 
 > - Before proceeding to your chosen exercise, ensure that you have completed the previous section to download the content of the GitHub repository needed for the workshop.
    
-### Workshop01
-  
-In this workshop, you will learn how to build a machine learning pipeline to build, train and deploy a ML model using SageMaker Python SDK from within a Jupyter notebook.  This workshop will use the SageMaker built-in algorithm XGBoost.  
+### Workshop 01 - AutoPilot with SageMaker
 
-Click on the link below to work on [Direct Marketing with Jupyter Notebook](./train/README.md) to complete Workshop 01. 
+In this workshop, you will use <b> SageMaker Autopilot </b> to _automate_ the process of building a ML pipeline.  Here, you will learn about two different options to create an `Autopilot Experiment`job:
+- Using Amazon SageMaker Studio UI, without writing code
+- With code using SageMaker Python SDK for Autopilot
+
+Click on  [Direct Marketing with Amazon SageMaker Autopilot](./1.autopilot/README.md) to complete Workshop 01.
 
 
 ### Workshop02
 
-In this workshop, you will  to use <b> SageMaker Autopilot </b> to _automate_ the process of building a ML pipeline.  Here, you will learn about two different options to create an `Autopilot Experiment`job:
-- Using Amazon SageMaker Studio UI, without writing code
-- With code using SageMaker Python SDK for Autopilot
+In this workshop, you will learn how to build a machine learning pipeline to build, train and deploy a ML model using SageMaker Python SDK from within a Jupyter notebook.  This workshop will use the SageMaker built-in algorithm XGBoost.  
 
-Click on  [Direct Marketing with Amazon SageMaker Autopilot](./autopilot/README.md) to complete Workshop 02.
+Click on the link below to work on [Direct Marketing with SageMaker Python SDK](./2.build_train_deploymenttrain/README.md) to complete Workshop 02. 
 
-  
+
 ### Workshop03
-Click on  [Direct Marketing with Amazon SageMaker Pipelines](./sagemaker_pipelines/README.md) to complete Workshop 03.
+Click on  [Direct Marketing with Amazon SageMaker Pipelines](./3.sagemaker_pipelines/README.md) to complete Workshop 03.
 
 
 #### Conclusion

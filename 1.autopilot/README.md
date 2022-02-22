@@ -179,9 +179,8 @@ In this section, we will create an Autopilot experiment using a Jupyter notebook
 ## Conclusion
 In this Lab, you have learnt how to build a SageMaker Autopilot experiment using both the SageMaker Studio UI and using SageMaker Autopilot SDK.  This concludes Lab 1.  
     
-## Next
-_Add link to Workshop 3_
-    
-```python
+## Next (Optional)
+
+Click on [Direct Marketing with SageMaker Python SDK](./2.build_train_deployment/README.md) to proceed to Workshop 02. ```python
 
 ```

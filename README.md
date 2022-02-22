@@ -10,6 +10,7 @@
 1. [Download Workshop Content](#Download-Workshop-Content)
 1. [Starting Workshop](#Starting-Workshop)
     1. [Overview of ML Use-Case](#Overview-of-ML-Use-Case)
+    1. [Setup and Data Preparation](#Data-Preparation-for-Workshop)
     1. [Workshop 01 AutoPilot with SageMaker](#Workshop-01-AutoPilot-with-SageMaker)
     1. [Workshop 02 Build ML Pipeline with SageMaker SDK](#Workshop-02-Build-ML-Pipeline-with-SageMaker-SDK)
     1. [Workshop 03 SageMaker Pipeline with SageMaker](#Workshop-03-SageMaker-Pipeline-with-SageMaker)
@@ -84,8 +85,8 @@ In this workshop, you will work on a typical machine learning (ML) problem which
 The model will be trained on a marketing dataset that contains information on customer demographics, responses to marketing events, and environmental factors. Information about this ML task and a version of the data set used is publicly available from the ML repository curated by the University of California, Irvine (https://archive.ics.uci.edu/ml/datasets/bank+marketing).
     
 This workshop implements a supervised machine learning problem to solve this problem. The steps include:
- * Downloading training data into Amazon SageMaker
- * Investigating and transforming the data so that it can be fed to Amazon SageMaker algorithms
+  * Downloading training data into Amazon SageMaker
+  * Investigating and transforming the data so that it can be fed to Amazon SageMaker algorithms
   * Estimating a model using the Gradient Boosting algorithm
   * Evaluating the effectiveness of the model
   * Deploying the model to an end-point to make on-going predictions    
@@ -100,12 +101,16 @@ This workshop explores three different options to implement the supervised ML pr
 > - You can progress through **all** the three workshop exercises one after the other or you can jump to an **indvidual** exercise that you may be interested to learn more about.
 
 > - All workshop exercises will be implemented within Amazon SageMaker Studio environment
-
-> - Before proceeding to your chosen exercise, ensure that you have completed the previous section to download the content of the GitHub repository needed for the workshop.
    
+### Setup and Data Preparation
+
+* This step must be completed prior to any of the workshop exercises.
+* On the left panel of SageMaker Studio, please click on icon `File Browser` and double clikc on the file [setup_and_data_prep.ipynb](./0.setup/setup_and_data_prep.ipynb) under folder `mlu-workshop/0.setup/` to open the Jupyter notebook.
+* Follow the instructions outlined in the Jupyter notebook to download the `Direct Marketing` data set.
+
 ### Workshop 01 AutoPilot with SageMaker
 
-In this workshop, you will use <b> SageMaker Autopilot </b> to _automate_ the process of building a ML pipeline.  Here, you will learn about two different options to create an `Autopilot Experiment`job:
+In this workshop, you will use <b> SageMaker Autopilot </b> to _automate_ the process of building a ML pipeline.  Here, you will learn about two different options to create an `Autopilot Experiment` job:
 - Using Amazon SageMaker Studio UI, without writing code
 - With code using SageMaker Python SDK for Autopilot
 

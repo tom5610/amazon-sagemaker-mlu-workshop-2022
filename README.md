@@ -11,9 +11,9 @@
 1. [Starting Workshop](#Starting-Workshop)
     1. [Overview of ML Use-Case](#Overview-of-ML-Use-Case)
     1. [Setup and Data Preparation](#Data-Preparation-for-Workshop)
-    1. [Workshop 01 AutoPilot with SageMaker](#Workshop-01-AutoPilot-with-SageMaker)
-    1. [Workshop 02 Build ML Pipeline with SageMaker SDK](#Workshop-02-Build-ML-Pipeline-with-SageMaker-SDK)
-    1. [Workshop 03 SageMaker Pipeline with SageMaker](#Workshop-03-SageMaker-Pipeline-with-SageMaker)
+    1. [Lab 01 AutoPilot with SageMaker](#Lab-01-AutoPilot-with-SageMaker)
+    1. [Lab 02 Build ML Model with SageMaker XGBoost Algorithm](#Lab-02-Build-ML-Model-with-SageMaker-XGBoost-Algorithm)
+    1. [Lab 03 SageMaker Pipeline with SageMaker](#Lab-03-SageMaker-Pipeline-with-SageMaker)
 
 ---
 
@@ -93,44 +93,44 @@ This workshop implements a supervised machine learning problem to solve this pro
 
 This workshop explores three different options to implement the supervised ML problem.
  1. Use SageMaker Autopilot to build a ML pipeline to generate the most accurate model to solve the given ML problem
- 1. Use a Jupyter notebook to manually implement all the phases of the ML pipeline using SageMaker Python SDK
+ 1. Use a Jupyter notebook to manually implement all the phases of the ML life-cycle using SageMaker Python SDK
  3. Use SageMaker Pipeline to orchestrate a ML SageMaker ML jobs
 
 > **_NOTE_** 
 
-> - You can progress through **all** the three workshop exercises one after the other or you can jump to an **indvidual** exercise that you may be interested to learn more about.
+> - You can progress through **all** the three labs in this workshop one after the other or you can jump to an **indvidual** lab that you may be interested to learn more about.
 
-> - All workshop exercises will be implemented within Amazon SageMaker Studio environment
+> - All labs will be implemented within Amazon SageMaker Studio environment
    
 ### Setup and Data Preparation
 
-* This step must be completed prior to any of the workshop exercises.
+* This step must be completed prior to any of the labs.
 * On the left panel of SageMaker Studio, please click on icon `File Browser` and double clikc on the file [setup_and_data_prep.ipynb](./0.setup/setup_and_data_prep.ipynb) under folder `mlu-workshop/0.setup/` to open the Jupyter notebook.
 * Follow the instructions outlined in the Jupyter notebook to download the `Direct Marketing` data set.
 
-### Workshop 01 AutoPilot with SageMaker
+### Lab 01 AutoPilot with SageMaker
 
-In this workshop, you will use <b> SageMaker Autopilot </b> to _automate_ the process of building a ML pipeline.  Here, you will learn about two different options to create an `Autopilot Experiment` job:
+In this lab, you will use <b> SageMaker Autopilot </b> to _automate_ the process of building a ML model.  Here, you will learn about _two_ different options to create an `Autopilot Experiment` job:
 - Using Amazon SageMaker Studio UI, without writing code
 - With code using SageMaker Python SDK for Autopilot
 
-Click on  [Direct Marketing with Amazon SageMaker Autopilot](./1.autopilot/README.md) to complete Workshop 01.
+Click on  [Direct Marketing with Amazon SageMaker Autopilot](./1.autopilot/README.md) to complete Lab 01.
 
 
-### Workshop 02 Build ML Pipeline with SageMaker SDK
+### Lab 02 Build ML Model with SageMaker XGBoost Algorithm
 
-In this workshop, you will manually generate a machine learning pipeline to build, train and deploy a ML model using SageMaker Python SDK from within a Jupyter notebook.  This workshop will use the SageMaker built-in algorithm XGBoost.  
+In this lab, you will manually generate a machine learning pipeline to build, train and deploy a ML model using SageMaker Python SDK from within a Jupyter notebook.  This lab will use the SageMaker built-in algorithm XGBoost.  
 
-Click on [Direct Marketing with SageMaker Python SDK](./2.build_train_deployment/README.md) to complete Workshop 02. 
+Click on [Direct Marketing with SageMaker Python SDK](./2.build_train_deployment/README.md) to complete lab 02. 
 
 
-### Workshop 03 SageMaker Pipeline with SageMaker
-Click on  [Direct Marketing with Amazon SageMaker Pipelines](./3.sagemaker_pipelines/README.md) to complete Workshop 03.
+### Lab 03 SageMaker Pipeline with SageMaker
+Click on  [Direct Marketing with Amazon SageMaker Pipelines](./3.sagemaker_pipelines/README.md) to complete Lab 03.
 
 
 #### Conclusion
 
-Congratulations! You have completed all the workshop exercises in this 1-Day MLU Workshop.
+Congratulations! You have completed all the labs in this 1-Day MLU Workshop.
 
 ```python
 

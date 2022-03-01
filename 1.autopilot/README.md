@@ -138,9 +138,10 @@ From SageMaker Studio, Under 'Launcher' tab, choose the **New autopilot experime
 
   ![manifest file](./image/ap_auto_pilot_job_in_progress.png)
 
-> ** It may take 60-70 mins until the job is finished, which depends on the amount of the training dataset & the number of candidates you want to experiment. (Autopilot supports up to 250 candidates) **
+> <b> It may take 60-70 mins until the job is finished, which depends on the amount of the training dataset & the number of candidates you want to experiment. (Autopilot supports up to 250 candidates) </b>
 
-> ** Do not proceed with the rest of Lab 01, until the Autopilot Expriement Job is completed **
+> <b> Do not proceed with the rest of Lab 01, until the Autopilot Expriement Job is completed </b>
+
 > While you are waiting for the autopilot job to complete, you may:
 >    - browse the Jupyter notebook  [Autopilot with SageMaker SDK](./02b_sagemaker_autopilot_experiment_with_sdk.ipynb) in another tab within SageMaker Studio to become familiar with the Autopilot API calls
      - you may then proceed to Lab 02 (if you want to learn how to manually build a ML workflow process) OR Lab 03 (if you want to learn how to use SageMaker pipelines to orchestrate an end-to-end ML workflow)

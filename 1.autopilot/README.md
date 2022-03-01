@@ -19,25 +19,22 @@ To solve tabular data ML problems is non-trivial, potentially organizations may 
 In this workshop, we will use SageMaker Autopilot to create an experiment.  This consists of two key steps: 
 
 
-1. [1 Preparing Training Data](#1-Preparing-Training-Data)
-1. [2 Create an Autopilot Experiment](#2-Create-an-Autopilot-Experiment)
-   > **_NOTE_** - Either of below steps will guide you to create an Autopilot experiment job. Please choose the step you are interested in learning more about.
-   - [Using SageMaker Studio UI](#Using-SageMaker-Studio-UI)
-   - [Using Python SDK](#Using-SageMaker-Python-SDK)
+1. [Preparing Training Data](#1-Preparing-Training-Data)
+1. [Create an Autopilot Experiment](#2-Create-an-Autopilot-Experiment)
 
  
-## 1 Preparing Training Data
+## Preparing Training Data
 
 * This step must be completed to stage the training data on to a S3 bucket.
 * On the left panel of SageMaker Studio, please click on icon `File Browser` and double click Jupyter notebook [01_sagemaker_autopilot_setup.ipynb](./01_sagemaker_autopilot_setup.ipynb) under folder `mlu-workshop/1.autopilot/` to open the notebook.
 * Follow the steps to prepare training dataset and upload it to S3 folder.
 
 
-## 2 Create an Autopilot Experiment
+## Create an Autopilot Experiment
 The training data is now stored in an S3 bucket.  You will now create an Autopilot experiment to train on this dataset. 
 Creating an Autopilot experiment can be done in one of two ways - using SageMaker Studio (without code) or using SageMaker Python SDK (with code).  In this workshop, you are required to choose one of the two approaches to launch an Autopilot job. Follow the steps below to complete this lab.
 
-> ** _NOTE_** - Please make sure that you choose <b> only one </b> of the options below to create an Autopilot experiment.  
+> **_NOTE_** - Please make sure that you choose <b> only one </b> of the options below to create an Autopilot experiment. 
 
 - [Using SageMaker Studio UI](#Using-SageMaker-Studio-UI)
 - [Using SageMaker Python SDK](#Using-SageMaker-Python-SDK)

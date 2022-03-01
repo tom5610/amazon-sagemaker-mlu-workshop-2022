@@ -12,11 +12,12 @@ In this workshop, you will learn how you can use Autopilot on the Direct Marketi
 
 ## Why SageMaker Autopilot?
 
-To solve tabular data ML problems is non-trivial, potentially organizations may hire data scientists / ML engineers (expensive resources) to work on the problem. Amazon SageMaker Autopilot makes machine learning easier and faster and it help you build classification and regression models without deep machine learning knowledge.
+To solve tabular data ML problems is non-trivial, potentially organizations may hire data scientists / ML engineers (expensive resources) to work on the problem. Amazon SageMaker Autopilot makes machine learning easier and faster and helps you build classification and regression models without deep machine learning knowledge.
 
 ## Worshop Guidance
 
-In this workshop, we will use SageMaker Autopilot to create an experiment.  This consists of two key steps: (1) **Preparing training data set** ( to store the training data on S3 bucket ) (2) **Create an Autopilot experiment job**.  Creating an Autopilot experiment can be done in one of two ways - using SageMaker Studio (without code) or using SageMaker Python SDK (with code).  In this workshop, you can choose between either of the two approaches.  Follow the steps below to complete this workshop. 
+In this workshop, we will use SageMaker Autopilot to create an experiment.  This consists of two key steps: 
+
 
 1. [1 Preparing Training Data](#1-Preparing-Training-Data)
 1. [2 Create an Autopilot Experiment](#2-Create-an-Autopilot-Experiment)
@@ -27,25 +28,33 @@ In this workshop, we will use SageMaker Autopilot to create an experiment.  This
  
 ## 1 Preparing Training Data
 
+* This step must be completed to stage the training data on to a S3 bucket.
 * On the left panel of SageMaker Studio, please click on icon `File Browser` and double click Jupyter notebook [01_sagemaker_autopilot_setup.ipynb](./01_sagemaker_autopilot_setup.ipynb) under folder `mlu-workshop/1.autopilot/` to open the notebook.
 * Follow the steps to prepare training dataset and upload it to S3 folder.
 
 
 ## 2 Create an Autopilot Experiment
-The training data is now stored in an S3 bucket.  You will now create an Autopilot experiment to train on this dataset.  Choose <b> one </b> of the options below to create an Autopilot experiment.  
+The training data is now stored in an S3 bucket.  You will now create an Autopilot experiment to train on this dataset. 
+Creating an Autopilot experiment can be done in one of two ways - using SageMaker Studio (without code) or using SageMaker Python SDK (with code).  In this workshop, you are required to choose one of the two approaches to launch an Autopilot job. Follow the steps below to complete this lab.
+
+> ** _NOTE_** - Please make sure that you choose <b> only one </b> of the options below to create an Autopilot experiment.  
+
+- [Using SageMaker Studio UI](#Using-SageMaker-Studio-UI)
+- [Using SageMaker Python SDK](#Using-SageMaker-Python-SDK)
 
 ### Using SageMaker Studio UI
 > **_For this part of the exercise, you will need to keep this README file open in a browser tab, while you carry out the various steps within SageMaker Studio._**
+
 Follow the instructions outlined below to create an experiment using Amazon SageMaker Studio UI.  
     
 #### 1. Introduction
 SageMaker Studio provide an UI interface to make [Amazon SageMaker Autopilot](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development-create-experiment.html) experiment easy.  Studio UI is the fastest and easiest way to kick off [Amazon SageMaker Autopilot](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development-create-experiment.html) experiment. With a couple of clicks and filling in the experiment details, such as training data S3 URI, output location S3 URI and experiment settings, etc. you can sit down and relax and wait for the AutoML service to figure out the best model candidate for your ML problems on tabular dataset.
 
-> **_NOTE_** Please do finish  [Data Preparation](./README.md/#Data-Preparation)  first so that we have the training dataset ready on the S3 bucket.    
+> **_NOTE_** Make sure you have completed [Preparing Training Data](./README.md/#1-Preparing-Training-Data) first so that we have the training dataset ready on the S3 bucket.    
 
 #### 2. Open Juypter Notebook
 
-* On the left panel of SageMaker Studio, please click on icon `File Browser` and double click Jupyter notebook [02a_sagemaker_autopilot_experiment_with_studio_ui.ipynb](./02a_sagemaker_autopilot_experiment_with_studio_ui.ipynb) under folder `mlu-workshop/1.autopilot/` to open the notebook.
+* On the left panel of SageMaker Studio, please click on icon `File Browser` and double click Jupyter notebook [02a_sagemaker_autopilot_experiment_with_studio_ui.ipynb](./02a_sagemaker_autopilot_experiment_with_studio_ui.ipynb) under folder `amazon-sagemaker-mlu-workshop/1.autopilot/` to open the notebook.
     
 #### 3. Run Setup in the Jupyter notebook.
 

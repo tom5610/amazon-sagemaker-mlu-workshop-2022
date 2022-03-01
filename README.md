@@ -60,22 +60,22 @@ Amazon SageMaker Studio is a web-based, integrated development environment (IDE)
 
 3. Under <b> Get Started </b>, click on the orange button <b> SageMaker Studio </b>
 ![png](./image/studio.JPG)
-4. A SageMaker Studio environment should already be provisioned. Click on <b> Open Studio </b> (on the right side of the pre-provisioned <code><b>sagemakeruser</b></code> username).
+4. A SageMaker Studio environment should already be provisioned. Click on <b> Launch App </b> and choose <b> Studio </b> (on the right side of the pre-provisioned <code><b>sagemakeruser</b></code> username).
 ![png](./image/sagemaker-user.JPG)
 5. The page can take 1 or 2 minutes to load when you access SageMaker Studio for the first time.
 ![png](./image/studio2.JPG)
 6. You will be redirected to a new web tab for `Amazon SageMaker Studio`that looks like this:
 ![png](./image/studio-dashboard.JPG)
-7. You can now close the `Launcher` panel. <br><b>Congratulations!! You have successfully launched SageMaker Studio.</b>
+7. <b>Congratulations!! You have successfully launched SageMaker Studio.</b>
 
 ## Download Workshop Content
 1. In SageMaker Studio, from the `Menu`, click on `File`, then `New` and choose `Terminal`.
 2. In the terminal, type the following command:
 
-    <code> git clone https://github.com/tom5610/mlu-workshop.git </code>
+    <code> git clone https://github.com/tom5610/amazon-sagemaker-mlu-workshop-2022.git </code>
     
 ![png](./image/clone.JPG)
-3. After completion of step 2, you will see a `mlu-workshop` folder created in the <b> left panel </b> of SageMaker Studio.
+3. After completion of step 2, you will see a folder `amazon-sagemaker-mlu-workshop-2022` created in the <b> left panel </b> of SageMaker Studio.
 
 ## Starting Workshop
 ### Overview of ML Use-Case
@@ -94,7 +94,7 @@ This workshop implements a supervised machine learning problem to solve this pro
 This workshop explores three different options to implement the supervised ML problem.
  1. Use SageMaker Autopilot to build a ML pipeline to generate the most accurate model to solve the given ML problem
  1. Use a Jupyter notebook to manually implement all the phases of the ML life-cycle using SageMaker Python SDK
- 3. Use SageMaker Pipeline to orchestrate a ML SageMaker ML jobs
+ 3. Use SageMaker Pipeline to orchestrate an end-to-end ML workflow process
 
 > **_NOTE_** 
 
@@ -104,9 +104,12 @@ This workshop explores three different options to implement the supervised ML pr
    
 ### Setup and Data Preparation
 
-* This step must be completed prior to any of the labs.
-* On the left panel of SageMaker Studio, please click on icon `File Browser` and double clikc on the file [setup_and_data_prep.ipynb](./0.setup/setup_and_data_prep.ipynb) under folder `mlu-workshop/0.setup/` to open the Jupyter notebook.
-* Follow the instructions outlined in the Jupyter notebook to download the `Direct Marketing` data set.
+* This step **must** be completed prior to any of the labs.
+* On the left panel of SageMaker Studio, please click on icon `File Browser` and double click on the file [setup_and_data_prep.ipynb](./0.setup/setup_and_data_prep.ipynb) under folder `amazon-sagemaker-mlu-workshop/0.setup/` to open the Jupyter notebook.
+![png](./image/file-browser.JPG)
+
+* You may see prompted to specify an `image` and `kernel` as per the image below (depending on the AWS region, where this workshop is run).  Ensure you select `Data Science` as the `image` and `Python 3` as the kernel.
+* The kernel may take a few minutes to start.  Once provisioned, a Jupyter notebook should be opened. Now, follow the instructions outlined in the Jupyter notebook to download the `Direct Marketing` data set.
 
 ### Lab 01 AutoPilot with SageMaker
 
@@ -119,12 +122,13 @@ Click on  [Direct Marketing with Amazon SageMaker Autopilot](./1.autopilot/READM
 
 ### Lab 02 Build ML Model with SageMaker XGBoost Algorithm
 
-In this lab, you will manually generate a machine learning pipeline to build, train and deploy a ML model using SageMaker Python SDK from within a Jupyter notebook.  This lab will use the SageMaker built-in algorithm XGBoost.  
+In this lab, you will manually generate a machine learning workflow to build, train and deploy a ML model using SageMaker Python SDK from within a Jupyter notebook.  This lab will use the SageMaker built-in algorithm XGBoost.  
 
-Click on [Direct Marketing with SageMaker Python SDK](./2.build_train_deployment/README.md) to complete lab 02. 
+Click on [Direct Marketing with SageMaker Python SDK](./2.build_train_deployment/README.md) to complete Lab 02. 
 
 
 ### Lab 03 SageMaker Pipeline with SageMaker
+In this lab, you will use <b> SageMaker Pipeline </b> to orchestrate an end-to-end workflow process.  
 Click on  [Direct Marketing with Amazon SageMaker Pipelines](./3.sagemaker_pipelines/README.md) to complete Lab 03.
 
 

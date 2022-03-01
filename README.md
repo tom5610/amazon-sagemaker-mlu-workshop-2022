@@ -109,6 +109,7 @@ This workshop explores three different options to implement the supervised ML pr
 ![png](./image/file-browser.JPG)
 
 * You may see prompted to specify an `image` and `kernel` as per the image below (depending on the AWS region, where this workshop is run).  Ensure you select `Data Science` as the `image` and `Python 3` as the kernel.
+![png](./image/kernel.JPG)
 * The kernel may take a few minutes to start.  Once provisioned, a Jupyter notebook should be opened. Now, follow the instructions outlined in the Jupyter notebook to download the `Direct Marketing` data set.
 
 ### Lab 01 AutoPilot with SageMaker

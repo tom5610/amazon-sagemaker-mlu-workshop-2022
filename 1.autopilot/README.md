@@ -201,6 +201,6 @@ In this Lab, you have learnt how to build a SageMaker Autopilot experiment using
     
 ## Next (Optional)
 
-Click on [Direct Marketing with SageMaker Python SDK](./2.builtin_algorithm_xgboost/README.md) to proceed to Lab 02. ```python
+Click on [Direct Marketing with SageMaker Python SDK](./../2.builtin_algorithm_xgboost/README.md) to proceed to Lab 02. ```python
 
 ```

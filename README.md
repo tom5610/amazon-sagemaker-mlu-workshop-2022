@@ -125,7 +125,7 @@ Click on  [Direct Marketing with Amazon SageMaker Autopilot](./1.autopilot/READM
 
 In this lab, you will manually generate a machine learning workflow to build, train and deploy a ML model using SageMaker Python SDK from within a Jupyter notebook.  This lab will use the SageMaker built-in algorithm XGBoost.  
 
-Click on [Direct Marketing with SageMaker Python SDK](./2.build_train_deployment/README.md) to complete Lab 02. 
+Click on [Direct Marketing with SageMaker Python SDK](./2.builtin_algorithm_xgboost/README.md) to complete Lab 02. 
 
 
 ### Lab 03 SageMaker Pipeline with SageMaker

@@ -105,7 +105,7 @@ This workshop explores three different options to implement the supervised ML pr
 ### Setup and Data Preparation
 
 * This step **must** be completed prior to any of the labs.
-* On the left panel of SageMaker Studio, please click on icon `File Browser` and double click on the file [setup_and_data_prep.ipynb](./0.setup/setup_and_data_prep.ipynb) under folder `amazon-sagemaker-mlu-workshop/0.setup/` to open the Jupyter notebook.
+* On the left panel of SageMaker Studio, please click on icon `File Browser` and double click on the file [setup_and_data_prep.ipynb](./0.setup/setup_and_data_prep.ipynb) under folder `amazon-sagemaker-mlu-workshop-2022/0.setup/` to open the Jupyter notebook.
 ![png](./image/file-browser.JPG)
 
 * You may see prompted to specify an `image` and `kernel` as per the image below (depending on the AWS region, where this workshop is run).  Ensure you select `Data Science` as the `image` and `Python 3` as the kernel.

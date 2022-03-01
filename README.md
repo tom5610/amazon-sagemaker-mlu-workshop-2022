@@ -128,7 +128,8 @@ Click on [Direct Marketing with SageMaker Python SDK](./2.build_train_deployment
 
 
 ### Lab 03 SageMaker Pipeline with SageMaker
-In this lab, you will use <b> SageMaker Pipeline </b> to orchestrate an end-to-end workflow process.  
+In this lab, you will use <b> SageMaker Pipeline </b> to orchestrate an end-to-end workflow process. 
+
 Click on  [Direct Marketing with Amazon SageMaker Pipelines](./3.sagemaker_pipelines/README.md) to complete Lab 03.
 
 
